@@ -1,12 +1,12 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
+import Header from "../components/Header/Header";
 
-const Layout = () => {
-    return (
-        <div className="flex flex-col items-center min-h-screen px-4">
-            <Outlet />
-        </div>
-    );
-};
+const Layout: React.FC = () => (
+    <div className="flex flex-col items-center min-h-screen">
+        <Header />
+        <Outlet />
+    </div>
+);
 
 export default Layout;
