@@ -9,10 +9,10 @@ const Header: React.FC = () => (
     <header className="w-full bg-neutral-950 text-neutral-100">
         <div className="absolute grid w-full h-full bg-neutral-800 bg-opacity-60 place-content-center">
             <div>
-                <div className="flex justify-between font-semibold text-neutral-100">
-                    <h2 className="text-3xl">Search</h2>
+                <div className="flex justify-between font-semibold text-neutral-200">
+                    <h2 className="text-2xl">Search</h2>
                     <button className="p-0.5">
-                        <AiOutlineClose size={26} />
+                        <AiOutlineClose size={24} />
                     </button>
                 </div>
                 <form
@@ -21,17 +21,23 @@ const Header: React.FC = () => (
                 >
                     <select
                         name="gender"
-                        className="px-6 text-2xl h-14 text-neutral-900 bg-neutral-200"
+                        className="px-6 text-xl font-semibold h-14 text-neutral-900 bg-neutral-200"
                     >
-                        <option value="all">All Genders</option>
-                        <option value="man">Man</option>
-                        <option value="woman">Woman</option>
+                        <option value="all" className="font-normal">
+                            All Genders
+                        </option>
+                        <option value="man" className="font-normal">
+                            Man
+                        </option>
+                        <option value="woman" className="font-normal">
+                            Woman
+                        </option>
                     </select>
                     <div className="border h-14 border-neutral-900"></div>
                     <input
                         type="search"
                         name="search"
-                        className="pl-6 text-2xl h-14 text-neutral-900 placeholder-neutral-400 bg-neutral-200 focus:outline-none"
+                        className="pl-6 text-xl h-14 text-neutral-900 placeholder-neutral-400 bg-neutral-200 focus:outline-none"
                         placeholder="Search..."
                     />
                     <button className="grid h-14 place-content-center aspect-square bg-neutral-200 text-neutral-900">
