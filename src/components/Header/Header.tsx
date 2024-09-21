@@ -19,12 +19,15 @@ const Header: React.FC = () => {
                         ? "opacity-100 w-full h-full"
                         : "opacity-0 w-0 h-0"
                 }`}
-                onClick={closeSearchModal}
             >
-                <div>
+                <div
+                    onClick={closeSearchModal}
+                    className="absolute w-full h-full"
+                ></div>
+                <div className="z-10">
                     <div className="flex justify-between font-semibold text-neutral-200">
                         <h2 className="text-2xl">Search</h2>
-                        <button className="p-0.5">
+                        <button className="p-0.5" onClick={closeSearchModal}>
                             <AiOutlineClose size={24} />
                         </button>
                     </div>
