@@ -1,9 +1,33 @@
 import React from "react";
 
+// Необходимо сделать логику для проверки, являеться ли продукт скидочным
+
+// Это пример данных что должны передаваться в карточку товара, реализуй тиизацию,
+// проверку на избранное, вывод массива размеров и логику расчета процента скидки.
+const productData = {
+    imageURL: "",
+    title: "",
+    isFavorite: false,
+    size: [
+        {
+            title: "41", //название размера
+            number: 30, //количество товара данного размера
+        },
+        {
+            title: "42",
+            number: 25,
+        },
+    ],
+    price: 1000,
+    oldPrice: 1200,
+    сurrency: "UAH",
+};
+
 const Pcard = () => {
     return (
         <>
             <div className="pl-2 pr-2 max-w-72 max-h-80">
+                {/* pl-2 pr-2 можно заменить на один клас px-2, а указывать высоту нет необходимости */}
                 <div className="relative">
                     <img
                         className="aspect-[273/337] rounded-sm" //hover
@@ -17,7 +41,6 @@ const Pcard = () => {
                         1
                     </span>
                 </div>
-
                 <div className="pt-2">
                     <div className="mb-1 text-base font-semibold">
                         Кросівки Staff beige & black
