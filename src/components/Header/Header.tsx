@@ -1,3 +1,4 @@
+import { AiOutlineHeart } from "react-icons/ai";
 import { AiOutlineClose } from "react-icons/ai";
 import { AiOutlineSearch } from "react-icons/ai";
 import React, { useState } from "react";
@@ -98,7 +99,9 @@ const Header: React.FC = () => {
                                 >
                                     <AiOutlineSearch size={20} />
                                 </button>
-                                <button>Btn-3</button>
+                                <button className="p-0.5">
+                                    <AiOutlineHeart size={20} />
+                                </button>
                                 <button>Btn-4</button>
                                 <button>Btn-5</button>
                             </div>
