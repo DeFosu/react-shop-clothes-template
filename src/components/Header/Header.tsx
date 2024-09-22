@@ -128,8 +128,9 @@ const Header: React.FC = () => {
                                     </label>
                                     <input
                                         type="tel"
-                                        value={"+380"}
-                                        className="border-b text-neutral-900 border-neutral-400 bg-neutral-50"
+                                        placeholder={"+380"}
+                                        name="tel"
+                                        className="px-2 py-1 border-b text-neutral-900 placeholder-neutral-900 border-neutral-400 bg-neutral-50"
                                     />
                                 </div>
                                 <div className="flex flex-col">
@@ -138,7 +139,8 @@ const Header: React.FC = () => {
                                     </label>
                                     <input
                                         type="password"
-                                        className="border-b text-neutral-900 border-neutral-400 bg-neutral-50"
+                                        className="px-2 py-1 border-b text-neutral-900 border-neutral-400 bg-neutral-50"
+                                        name="password"
                                     />
                                 </div>
                             </div>
