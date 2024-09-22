@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import LinkList from "./LinkList";
 import IconWithNumbers from "./IconWithNumbers";
 import NavigationMenu from "./NavigationMenu";
+import DarkOverlay from "../Overlay/DarkOverlay";
 
 const Header: React.FC = () => {
     const [searchOpen, setSearchOpen] = useState(false);
@@ -14,17 +15,10 @@ const Header: React.FC = () => {
 
     return (
         <header className="w-full bg-neutral-950 text-neutral-100">
-            <div
-                className={`absolute grid   bg-neutral-800 bg-opacity-60 place-content-center transition-opacity duration-300 ease-out ${
-                    searchOpen
-                        ? "opacity-100 w-full h-full"
-                        : "opacity-0 w-0 h-0"
-                }`}
+            <DarkOverlay
+                openStatus={searchOpen}
+                closeFunction={closeSearchModal}
             >
-                <div
-                    onClick={closeSearchModal}
-                    className="absolute w-full h-full"
-                ></div>
                 <div className="z-10">
                     <div className="flex justify-between font-semibold text-neutral-200">
                         <h2 className="text-2xl">Search</h2>
@@ -62,7 +56,7 @@ const Header: React.FC = () => {
                         </button>
                     </form>
                 </div>
-            </div>
+            </DarkOverlay>
             <div className="w-full bg-neutral-200">
                 <div className="container px-4 mx-auto">
                     <div className="flex items-center justify-between py-1 text-sm font-medium text-neutral-500">
