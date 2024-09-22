@@ -1,12 +1,12 @@
 import React, { type ReactNode } from "react";
 
-type DarkOverlayProps = {
+type TDarkOverlay = {
     children: ReactNode;
     openStatus: boolean;
     closeFunction: () => void;
 };
 
-const DarkOverlay: React.FC<DarkOverlayProps> = ({
+const DarkOverlay: React.FC<TDarkOverlay> = ({
     children,
     openStatus,
     closeFunction,
