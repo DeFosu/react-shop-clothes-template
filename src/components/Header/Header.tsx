@@ -93,38 +93,33 @@ const Header: React.FC = () => {
                 </div>
             </DarkOverlay>
             <TopBar />
-            <Container>
-                <div className="flex items-center gap-8">
-                    <div className="text-3xl font-bold">Logo</div>
-                    <div className="flex flex-col w-full">
-                        <div className="flex items-center justify-between">
-                            <div className="flex items-center gap-8">
-                                <button className="py-2 text-sm uppercase">
-                                    Для хлопців
-                                </button>
-                                <button className="py-2 text-sm font-normal uppercase">
-                                    Для дівчат
-                                </button>
-                            </div>
-                            <div className="flex items-center gap-2 text-sm">
-                                <button>Btn-2</button>
-                                <button
-                                    className="p-0.5"
-                                    onClick={openSearchModal}
-                                >
-                                    <AiOutlineSearch size={20} />
-                                </button>
-                                <button className="p-0.5">
-                                    <AiOutlineHeart size={20} />
-                                </button>
-                                <button>Btn-4</button>
-                                <button>Btn-5</button>
-                            </div>
+            <Container className="flex items-center gap-8">
+                <div className="text-3xl font-bold">Logo</div>
+                <div className="flex flex-col w-full">
+                    <div className="flex items-center justify-between">
+                        <div className="flex items-center gap-8">
+                            <button className="py-2 text-sm uppercase">
+                                Для хлопців
+                            </button>
+                            <button className="py-2 text-sm font-normal uppercase">
+                                Для дівчат
+                            </button>
                         </div>
-                        <nav>
-                            <NavigationMenu links={navigationMenuData} />
-                        </nav>
+                        <div className="flex items-center gap-2 text-sm">
+                            <button>Btn-2</button>
+                            <button className="p-0.5" onClick={openSearchModal}>
+                                <AiOutlineSearch size={20} />
+                            </button>
+                            <button className="p-0.5">
+                                <AiOutlineHeart size={20} />
+                            </button>
+                            <button>Btn-4</button>
+                            <button>Btn-5</button>
+                        </div>
                     </div>
+                    <nav>
+                        <NavigationMenu links={navigationMenuData} />
+                    </nav>
                 </div>
             </Container>
         </header>
