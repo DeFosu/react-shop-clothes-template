@@ -1,11 +1,12 @@
-import { AiOutlineHeart } from "react-icons/ai";
-import { AiOutlineClose } from "react-icons/ai";
-import { AiOutlineSearch } from "react-icons/ai";
 import React, { useState } from "react";
-import LinkList from "./LinkList";
-import IconWithNumbers from "./IconWithNumbers";
-import NavigationMenu from "./NavigationMenu";
+import {
+    AiOutlineClose,
+    AiOutlineHeart,
+    AiOutlineSearch,
+} from "react-icons/ai";
 import DarkOverlay from "../Overlay/DarkOverlay";
+import NavigationMenu from "./NavigationMenu";
+import TopBar from "./TopBar";
 
 const Header: React.FC = () => {
     const [searchOpen, setSearchOpen] = useState(false);
@@ -57,21 +58,7 @@ const Header: React.FC = () => {
                     </form>
                 </div>
             </DarkOverlay>
-            <div className="w-full bg-neutral-200">
-                <div className="container px-4 mx-auto">
-                    <div className="flex items-center justify-between py-1 text-sm font-medium text-neutral-500">
-                        <LinkList
-                            links={["Link-1", "Link-2", "Link-3", "Link-4"]}
-                        />
-                        <div className="flex items-center gap-8">
-                            <IconWithNumbers
-                                items={["Icon", "Number", "Number", "Number"]}
-                            />
-                            <IconWithNumbers items={["Icon", "Email"]} />
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <TopBar />
             <div className="container px-4 mx-auto">
                 <div className="flex items-center gap-8">
                     <div className="text-3xl font-bold">Logo</div>
