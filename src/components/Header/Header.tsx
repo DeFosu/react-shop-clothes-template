@@ -9,6 +9,39 @@ import NavigationMenu from "./NavigationMenu";
 import TopBar from "./TopBar";
 import Container from "../Container/Container";
 
+const navigationMenuData = [
+    {
+        text: "Link-1",
+        link: "/",
+        color: "text-red-600",
+    },
+    {
+        text: "Link-2",
+        link: "/",
+        color: "text-green-600",
+    },
+    {
+        text: "Link-3",
+        link: "/",
+    },
+    {
+        text: "Link-4",
+        link: "/",
+    },
+    {
+        text: "Link-5",
+        link: "/",
+    },
+    {
+        text: "Link-6",
+        link: "/",
+    },
+    {
+        text: "Link-7",
+        link: "/",
+    },
+];
+
 const Header: React.FC = () => {
     const [searchOpen, setSearchOpen] = useState(false);
 
@@ -89,17 +122,7 @@ const Header: React.FC = () => {
                             </div>
                         </div>
                         <nav>
-                            <NavigationMenu
-                                links={[
-                                    { text: "Link-1", color: "text-red-600" },
-                                    { text: "Link-2", color: "text-green-600" },
-                                    { text: "Link-3" },
-                                    { text: "Link-4" },
-                                    { text: "Link-5" },
-                                    { text: "Link-6" },
-                                    { text: "Link-7" },
-                                ]}
-                            />
+                            <NavigationMenu links={navigationMenuData} />
                         </nav>
                     </div>
                 </div>
