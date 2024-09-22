@@ -7,6 +7,7 @@ import {
 import DarkOverlay from "../Overlay/DarkOverlay";
 import NavigationMenu from "./NavigationMenu";
 import TopBar from "./TopBar";
+import Container from "../Container/Container";
 
 const Header: React.FC = () => {
     const [searchOpen, setSearchOpen] = useState(false);
@@ -59,7 +60,7 @@ const Header: React.FC = () => {
                 </div>
             </DarkOverlay>
             <TopBar />
-            <div className="container px-4 mx-auto">
+            <Container>
                 <div className="flex items-center gap-8">
                     <div className="text-3xl font-bold">Logo</div>
                     <div className="flex flex-col w-full">
@@ -102,7 +103,7 @@ const Header: React.FC = () => {
                         </nav>
                     </div>
                 </div>
-            </div>
+            </Container>
         </header>
     );
 };
