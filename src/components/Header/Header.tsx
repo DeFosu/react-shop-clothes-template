@@ -190,7 +190,6 @@ const Header: React.FC = () => {
                             </button>
                         </div>
                         <div className="flex items-center gap-2 text-sm">
-                            <button>Btn-2</button>
                             <button
                                 className="p-0.5"
                                 onClick={openSearchWindow}
