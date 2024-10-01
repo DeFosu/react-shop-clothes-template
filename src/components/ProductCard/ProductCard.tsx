@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import type { TProductData } from "./ProductCard.props";
 
 const ProductCard: React.FC<TProductData> = (product) => {
-    const [value, setValue] = useState(0);
+    const [value, setValue] = useState('❤');
 
     const handleClick = () => {
-        setValue((prevValue) => (prevValue === 0 ? 1 : 0));
+        setValue((prevValue) => (prevValue === '❤' ? '🖤' : '❤'));
     };
 
     // проверка
@@ -32,7 +32,7 @@ const ProductCard: React.FC<TProductData> = (product) => {
                     </span>
                 )}
                 <button
-                    className="absolute flex items-center justify-center w-8 h-8 text-red-300 bg-white rounded-full shadow-md top-2 right-2"
+                    className="absolute flex items-center justify-center w-8 h-8 bg-white rounded-full shadow-md top-2 right-2"
                     onClick={handleClick}
                 >
                     {value}

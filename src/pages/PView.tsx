@@ -1,11 +1,12 @@
 import React from "react";
+import ProductDetails from "../components/ProductDetails/ProductDetails";
 
 
 
 const PView: React.FC = () => {
     return (
-        <div className="grid grid-cols-2 gap-4 pt-8 sm:grid-cols-3">
-         123w
+        <div className="">
+         <ProductDetails />
         </div>
     );
 };
