@@ -13,7 +13,7 @@ const DarkOverlay: React.FC<TDarkOverlay> = ({
 }) => {
     return (
         <div
-            className={`absolute inset-0 grid bg-neutral-800 bg-opacity-60 place-content-center transition-opacity duration-300 ease-out ${
+            className={`z-40 absolute inset-0 grid bg-neutral-800 bg-opacity-60 place-content-center transition-opacity duration-300 ease-out ${
                 openStatus ? "opacity-100" : "opacity-0 pointer-events-none"
             }`}
         >
