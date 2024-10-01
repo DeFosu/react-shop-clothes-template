@@ -47,7 +47,11 @@ const ProductCard: React.FC<TProductData> = (product) => {
                 </p>
             </div>
             <div className="pb-4">
-                <span className="inline-block text-xl font-medium text-red-500">
+                <span
+                    className={`inline-block text-xl font-medium ${
+                        hasDiscount && "text-red-500"
+                    }`}
+                >
                     {product.price} {product.currency}
                 </span>
                 {hasDiscount && (
