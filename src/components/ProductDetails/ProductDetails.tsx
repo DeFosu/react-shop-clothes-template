@@ -1,9 +1,11 @@
 import React, {useState} from 'react';
+import ToBasketBtn from './ToBasketBtn';
+import BuyOneClickBtn from './BuyOneClickBtn';
 
 
 
 const ProductDetails = () => {
-  const hasDiscount = true;
+  const hasDiscount = false;
 const [value, setValue] = useState('❤');
 
 const handleClick = () => {
@@ -32,6 +34,7 @@ const handleClick = () => {
                     {value}
                 </button>
       </div>
+
       <span className="py-1 space-x-2 text-xs text-gray-400">Article: MS0276 Category: Shoes Category: Shoes</span> 
       <div className="pb-4">
                 <span
@@ -49,7 +52,11 @@ const handleClick = () => {
             </div>
         <p className="text-gray-400 mt-1">Бонуси: 24 грн</p>                   
         {/* сделать ологику выщета бонуса в размере 3 проц от цены*/}
-      </div>
+        <div className=''>
+<ToBasketBtn />
+<BuyOneClickBtn />
+  </div>
+   </div>
 
   );
 };
