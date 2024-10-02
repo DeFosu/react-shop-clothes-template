@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import ToBasketBtn from './ToBasketBtn';
 import BuyOneClickBtn from './BuyOneClickBtn';
+import Sizes from './Sizes';
+import InfoButton from './InfoButton';
 
 
 
@@ -53,8 +55,10 @@ const handleClick = () => {
         <p className="text-gray-400 mt-1">Бонуси: 24 грн</p>                   
         {/* сделать ологику выщета бонуса в размере 3 проц от цены*/}
         <div className=''>
+          <Sizes />
 <ToBasketBtn />
 <BuyOneClickBtn />
+<InfoButton />
   </div>
    </div>
 
