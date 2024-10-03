@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import ToBasketBtn from "./ToBasketBtn";
-import BuyOneClickBtn from "./BuyOneClickBtn";
+import DetailsButton from "./DetailsButton";
 import Sizes from "./Sizes";
-import InfoButton from "./InfoButton";
+import ProductDescription from "./ProductDescription";
 
 const ProductDetails = () => {
     const hasDiscount = false;
@@ -56,11 +55,24 @@ const ProductDetails = () => {
             {/* сделать ологику выщета бонуса в размере 3 проц от цены*/}
             <div className="">
                 <Sizes />
-                <ToBasketBtn />
-                <BuyOneClickBtn variant="contained" className="bg-red-800">
+                <DetailsButton variant="contained" className="bg-green-700 text-white">
+                    ADD TO BASKET
+                </DetailsButton>
+                <DetailsButton variant="contained" className="bg-gray-400">
                     BUY IN ONE CLICK
-                </BuyOneClickBtn>
-                <InfoButton />
+                </DetailsButton>
+                 <>⬜</><DetailsButton variant="outlined">
+                 Sizes
+                </DetailsButton>
+                <>⬜</><DetailsButton variant="outlined">
+                 Delivery,  payment, return
+                </DetailsButton>
+                <>⬜</><DetailsButton variant="outlined">
+                 Availability in stores
+                </DetailsButton>
+                <div>
+                    <ProductDescription />
+                </div>
             </div>
         </div>
     );

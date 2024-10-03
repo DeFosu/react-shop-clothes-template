@@ -6,14 +6,14 @@ type TButton = {
     variant?: "text" | "contained" | "outlined";
 };
 
-const BuyOneClickBtn: React.FC<TButton> = (props) => {
+const DetailsButton: React.FC<TButton> = (props) => {
     const { children, className = "", variant = "contained" } = props;
 
     const styleVariant = {
-        text: "underline",
+        text: "underline",  
         contained: "bg-gray-400 text-black font-normal text-xs py-4 px-8",
         outlined:
-            " text-black font-normal text-xs py-4 px-8 bg-transparent border",
+            "font-light text-sm underline underline-offset-4",
     };
 
     const buttonStyle = `${styleVariant[variant]} ${className}`;
@@ -21,4 +21,4 @@ const BuyOneClickBtn: React.FC<TButton> = (props) => {
     return <button className={buttonStyle}>{children}</button>;
 };
 
-export default BuyOneClickBtn;
+export default DetailsButton;
