@@ -46,7 +46,7 @@ const ProductDescription = () => {
     </ul>
   </div>
       </div>
-      <div className="pb-6 flex items-center justify-around my-7">
+      <div className="pb-6 flex items-center justify-around  w-full space-x-[20px] my-7">
         <DetailsButton variant="bigoutlined">
                  REVIEWS 11
                 </DetailsButton>

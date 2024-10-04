@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import DetailsButton from "./DetailsButton";
 import Sizes from "./Sizes";
-import ProductDescription from "./ProductDescription";
+
+
 
 const ProductDetails = () => {
     const hasDiscount = false;
@@ -17,6 +18,7 @@ const ProductDetails = () => {
     // };
     return (
         <div className="mx-auto ">
+                                
             <div className="flex items-center pb-6 space-x-4 text-xs font-normal text-gray-400">
                 <span>Для хлопців</span>
                 <span className="text-gray-300">—</span>
@@ -54,16 +56,17 @@ const ProductDetails = () => {
             <p className="mt-1 text-gray-400">Бонуси: 24 грн</p>
             {/* сделать ологику выщета бонуса в размере 3 проц от цены*/}
             <div className="">
-                <Sizes />
+                <Sizes />    
+                             <>⬜</><DetailsButton variant="outlined">
+                 Sizes
+                </DetailsButton>
                 <DetailsButton variant="contained" className="bg-green-700 text-white">
                     ADD TO BASKET
                 </DetailsButton>
                 <DetailsButton variant="contained" className="bg-gray-400">
                     BUY IN ONE CLICK
                 </DetailsButton>
-                 <>⬜</><DetailsButton variant="outlined">
-                 Sizes
-                </DetailsButton>
+
                 <>⬜</><DetailsButton variant="outlined">
                  Delivery,  payment, return
                 </DetailsButton>
@@ -71,7 +74,7 @@ const ProductDetails = () => {
                  Availability in stores
                 </DetailsButton>
                 <div>
-                    <ProductDescription />
+                    
            </div> 
            </div>
         </div>

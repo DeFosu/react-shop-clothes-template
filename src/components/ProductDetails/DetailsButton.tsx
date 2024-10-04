@@ -12,7 +12,7 @@ const DetailsButton: React.FC<TButton> = (props) => {
     const styleVariant = {
         text: "underline",  
         contained: "bg-gray-400 text-black font-normal text-xs py-4 px-8",
-        outlined: "font-light text-sm underline underline-offset-4 decoration-[1px]",
+        outlined: "text-xs underline underline-offset-4 decoration-[1px]",
         bigoutlined: " text-lg font-bold underline underline underline-offset-[8px] decoration-[2px]",
         withicon: "bg-black text-white flex items-center px-4 py-2",
     };
