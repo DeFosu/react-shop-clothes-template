@@ -1,8 +1,11 @@
 import React from 'react';
+import DetailsButton from './DetailsButton';
+
 
 const ProductDescription = () => {
   return (
-    <div className='max-w-xl m-auto align bg-gray-400'>
+    <div className='w-full mx-auto mb-[75px] pt-[70px] px-5 max-w-[1210px]'>
+    <div className='max-w-xl m-auto'>
         <div className='text-center mb-10'>Description</div>
         <p className="mb-4 text-xs">
     A knitted sweater with exclusive embroidery in an oversized fit will become a bright element in creating your image.
@@ -42,8 +45,21 @@ const ProductDescription = () => {
       <li>- Size of sweater: M</li>
     </ul>
   </div>
-
-
+      </div>
+      <div className="pb-6 flex items-center justify-around my-7">
+        <DetailsButton variant="bigoutlined">
+                 REVIEWS 11
+                </DetailsButton>
+        <DetailsButton variant="bigoutlined">
+                 REVIEWS 22
+                </DetailsButton>
+                </div>
+                <div className='flex justify-center'>
+                <DetailsButton variant="withicon">
+                <span className="h-5 w-5 mr-10 ml-2">+</span> {/* Icon */}
+                <span className="tracking-wide">ДОДАТИ ВІДГУК</span> {/* Text */}
+                </DetailsButton>
+                </div>
       </div>
   );
 };
