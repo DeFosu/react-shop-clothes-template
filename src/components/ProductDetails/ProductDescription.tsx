@@ -4,7 +4,7 @@ import DetailsButton from './DetailsButton';
 
 const ProductDescription = () => {
   return (
-    <div className='w-full mx-auto mb-[75px] pt-[70px] px-5 max-w-[1210px]'>
+    <div className='w-full mx-auto pb-4 pt-[70px] px-5 max-w-[1210px]'>
     <div className='max-w-xl m-auto'>
         <div className='text-center mb-10'>Description</div>
         <p className="mb-4 text-xs">
@@ -46,7 +46,7 @@ const ProductDescription = () => {
     </ul>
   </div>
       </div>
-      <div className="pb-6 flex items-center justify-around  w-full space-x-[20px] my-7">
+      <div className="flex justify-center space-x-6 pb-2 my-7">
         <DetailsButton variant="bigoutlined">
                  REVIEWS 11
                 </DetailsButton>
@@ -56,8 +56,8 @@ const ProductDescription = () => {
                 </div>
                 <div className='flex justify-center'>
                 <DetailsButton variant="withicon">
-                <span className="h-5 w-5 mr-10 ml-2">+</span> {/* Icon */}
-                <span className="tracking-wide">ДОДАТИ ВІДГУК</span> {/* Text */}
+                <span className="h-5 w-5 mr-10 ml-2">+</span>
+                <span className="tracking-wide">ADD REVIEW</span> 
                 </DetailsButton>
                 </div>
       </div>

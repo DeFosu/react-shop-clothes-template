@@ -71,11 +71,34 @@ const productData = [
         oldPrice: 4000,
         currency: "UAH",
     },
+    {
+        imageURL:
+            "https://krossmarket.by/image/cache/catalog/krossovki/18.06.23/kopijaimg_4026-1200x1200.jpg",
+        title: "New Balance Classic1",
+        isFavorite: false,
+        size: [
+            {
+                title: "38",
+                number: 20,
+            },
+            {
+                title: "39",
+                number: 13,
+            },
+            {
+                title: "40",
+                number: 10,
+            },
+        ],
+        price: 3200,
+        oldPrice: 4000,
+        currency: "UAH",
+    },
 ];
 
 const Pcard: React.FC = () => {
     return (
-        <div className="grid grid-cols-2 gap-4 pt-8 sm:grid-cols-3">
+        <div className="grid grid-cols-2 gap-1 pt-8 sm:grid-cols-4">
             {productData.map((data, index) => (
                 <ProductCard {...data} key={index} />
             ))}

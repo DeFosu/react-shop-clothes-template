@@ -5,7 +5,11 @@ const Sizes = () => {
     <div className="space-y-2">
       <div className="font-bold tracking-widest ">SIZE</div>
       <div className="flex ">
-        <span className="font-light text-xs text-gray-400">40 41 42 43 44 45</span>
+        <span className="flex space-x-5 font-light text-base ">  
+          <span>40</span>
+  <span>41</span>
+  <span>42</span>
+  </span>
 
       </div>
     </div>

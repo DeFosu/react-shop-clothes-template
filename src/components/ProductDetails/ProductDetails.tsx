@@ -5,7 +5,7 @@ import Sizes from "./Sizes";
 
 
 const ProductDetails = () => {
-    const hasDiscount = false;
+    const hasDiscount = true;
     const [value, setValue] = useState("❤");
 
     const handleClick = () => {
@@ -26,56 +26,58 @@ const ProductDetails = () => {
                 <span className="text-gray-300">—</span>
                 <span className="text-black">Кросівки, кеди</span>
             </div>
-            <div className="text-base font-semibold">
+            <div className="text-3xl mb-6">
                 Кросівки Staff white & brown
                 <button
-                    className="w-8 h-8 text-red-300 rounded-full top-2 right-2"
+                    className="pl-14 text-red-400"
                     onClick={handleClick}
                 >
                     {value}
                 </button>
             </div>
 
-            <span className="py-1 space-x-2 text-xs text-gray-400">
+            <span className="text-lg tracking-widest">
                 Article: MS0276 Category: Shoes Category: Shoes
             </span>
-            <div className="pb-4">
+            <div className="pt-10 pb-4">
                 <span
-                    className={`inline-block text-xl font-medium ${
-                        hasDiscount && "text-red-500"
+                    className={`inline-block text-3xl ${
+                        hasDiscount && "text-red-600"
                     }`}
                 >
                     800 UAH
                 </span>
                 {hasDiscount && (
-                    <span className="pl-2 text-base font-normal text-gray-500 line-through">
+                    <span className="pl-2 text-3xl text-gray-500 line-through">
                         1000 UAH
                     </span>
                 )}
             </div>
-            <p className="mt-1 text-gray-400">Бонуси: 24 грн</p>
+            <p className="mt-1 mb-14 text-gray-400">Бонуси: 24 грн</p>
             {/* сделать ологику выщета бонуса в размере 3 проц от цены*/}
-            <div className="">
+            <div className="mb-10">
                 <Sizes />    
-                             <>⬜</><DetailsButton variant="outlined">
+                </div>
+                <div className="mb-8">    <>⬜</><DetailsButton variant="outlined">
                  Sizes
-                </DetailsButton>
-                <DetailsButton variant="contained" className="bg-green-700 text-white">
+                </DetailsButton></div>
+                <div className="pb-12">         
+                <DetailsButton variant="contained" className="bg-green-800 text-white">
                     ADD TO BASKET
                 </DetailsButton>
-                <DetailsButton variant="contained" className="bg-gray-400">
+                <DetailsButton variant="contained" className="bg-gray-300">
                     BUY IN ONE CLICK
                 </DetailsButton>
-
+                </div>
+                <div>
                 <>⬜</><DetailsButton variant="outlined">
                  Delivery,  payment, return
                 </DetailsButton>
                 <>⬜</><DetailsButton variant="outlined">
                  Availability in stores
                 </DetailsButton>
+               </div>
                 <div>
-                    
-           </div> 
            </div>
         </div>
     );
