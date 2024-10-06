@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import DetailsButton from "./DetailsButton";
 import Sizes from "./Sizes";
+import SizesPrompt from "./SizesPrompt";
 
 
 
@@ -58,9 +59,7 @@ const ProductDetails = () => {
             <div className="mb-10">
                 <Sizes />    
                 </div>
-                <div className="mb-8">    <>⬜</><DetailsButton variant="outlined">
-                 Sizes
-                </DetailsButton></div>
+                <div className="mb-8">    <SizesPrompt /></div>
                 <div className="pb-12">         
                 <DetailsButton variant="contained" className="bg-green-800 text-white mr-8">
                     ADD TO BASKET
