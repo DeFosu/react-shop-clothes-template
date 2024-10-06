@@ -1,9 +1,8 @@
 import React from 'react';
-import DetailsButton from './DetailsButton';
 import { FaHeart, FaComment } from "react-icons/fa";
 
 
-const ReviewContent = () => {
+const QuestionContent = () => {
   return (
     <div className='w-full mx-auto pb-4 pt-[70px] px-5 max-w-[1210px]'>
     <div className='max-w-xl m-auto'>
@@ -27,9 +26,6 @@ const ReviewContent = () => {
           <FaComment />
           <span>2</span>
         </div>
-        <div><DetailsButton variant="outlined">
-                 Answer
-                </DetailsButton></div>
       </div>
     </div>
                 </div>
@@ -37,4 +33,4 @@ const ReviewContent = () => {
   );
 };
 
-export default ReviewContent;
+export default QuestionContent;

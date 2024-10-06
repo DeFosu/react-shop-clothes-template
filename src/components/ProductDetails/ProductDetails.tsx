@@ -12,7 +12,7 @@ const ProductDetails = () => {
         setValue((prevValue) => (prevValue === "❤" ? "🖤" : "❤"));
     };
 
-    // Функция для расчета бонуса (3% от текущей цены)
+    // Функция для расчета бонуса
     // const calculateBonus = (price) => {
     //   return (price * 0.03).toFixed(2);
     // };
@@ -53,7 +53,7 @@ const ProductDetails = () => {
                     </span>
                 )}
             </div>
-            <p className="mt-1 mb-14 text-gray-400">Бонуси: 24 грн</p>
+            <p className="border-b-2 pb-10 mt-1 mb-14 text-gray-400">Бонуси: 24 грн</p>
             {/* сделать ологику выщета бонуса в размере 3 проц от цены*/}
             <div className="mb-10">
                 <Sizes />    
@@ -62,7 +62,7 @@ const ProductDetails = () => {
                  Sizes
                 </DetailsButton></div>
                 <div className="pb-12">         
-                <DetailsButton variant="contained" className="bg-green-800 text-white">
+                <DetailsButton variant="contained" className="bg-green-800 text-white mr-8">
                     ADD TO BASKET
                 </DetailsButton>
                 <DetailsButton variant="contained" className="bg-gray-300">
