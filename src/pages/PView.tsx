@@ -7,14 +7,19 @@ import ReviewContent from "../components/ProductDetails/ReviewContent";
 
 const PView: React.FC = () => {
     return (
-        <div className="py-10">    
-            <div> <PDTop />
+        
+        <div className=" w-full">    
+            <div className="bg-[#f9f9f9] w-full flex justify-center">
+                 <PDTop />
             </div>
-            <div> <ProductDescription /> </div>
-            <ReviewContent />
+            <div className="mx-auto container">
+                 <ProductDescription /> 
+        </div>
+           <div className="mx-auto container"><ReviewContent />
             <div className="pb-6"><WatchedProduct /></div>
             <div className="pb-1"><RecomendedProduct /></div>
-         </div>
+        </div>  
+        </div>
     );
 };
 

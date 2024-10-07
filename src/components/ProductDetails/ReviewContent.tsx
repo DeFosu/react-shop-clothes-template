@@ -14,7 +14,7 @@ const ReviewContent = () => {
         </div>
         <div>
           <p className="text-sm text-gray-500">17 sep 2024 14:08</p>
-          <p className="font-semibold">Donald</p>
+          <p className="font-semibold">Donald1</p>
         </div>
       </div>
       <p className="mb-3">good</p>

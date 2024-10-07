@@ -61,7 +61,7 @@ const ProductDetails = () => {
                 </div>
                 <div className="mb-8">    <SizesPrompt /></div>
                 <div className="pb-12">         
-                <DetailsButton variant="contained" className="bg-green-800 text-white mr-8">
+                <DetailsButton variant="contained" className="bg-green-800 text-slate-200 mr-8">
                     ADD TO BASKET
                 </DetailsButton>
                 <DetailsButton variant="contained" className="bg-gray-300">

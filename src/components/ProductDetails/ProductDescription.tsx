@@ -6,7 +6,7 @@ const ProductDescription = () => {
   return (
     <div className='w-full mx-auto pb-4 pt-[70px] px-5 max-w-[1210px]'>
     <div className='max-w-xl m-auto'>
-        <div className='text-center mb-10'>Description</div>
+        <div className='text-lg text-center mb-14 font-semibold tracking-widest'>DESCRIPTION</div>
         <p className="mb-4 text-xs">
     A knitted sweater with exclusive embroidery in an oversized fit will become a bright element in creating your image.
   </p>
@@ -46,12 +46,12 @@ const ProductDescription = () => {
     </ul>
   </div>
       </div>
-      <div className="flex justify-center space-x-6 pb-2 my-7">
-        <DetailsButton variant="bigoutlined">
+      <div className="flex justify-center space-x-6 pb-2 mb-7">
+        <DetailsButton variant="bignoncontained">
                  REVIEWS 11
                 </DetailsButton>
-        <DetailsButton variant="bigoutlined">
-                 REVIEWS 22
+        <DetailsButton variant="bignoncontained">
+                 QUESTIONS 222
                 </DetailsButton>
                 </div>
                 <div className='flex justify-center'>
