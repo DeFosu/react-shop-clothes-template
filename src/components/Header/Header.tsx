@@ -15,35 +15,28 @@ import TopBar from "./TopBar";
 
 const navigationMenuData = [
     {
-        text: "Link-1",
+        text: "Discounts",
         link: "/",
         color: "text-red-600",
     },
     {
-        text: "Link-2",
+        text: "New",
         link: "/",
         color: "text-green-600",
     },
     {
-        text: "Link-3",
+        text: "Clothing",
         link: "/",
     },
     {
-        text: "Link-4",
+        text: "Footwear",
         link: "/",
     },
     {
-        text: "Link-5",
+        text: "Acessories",
         link: "/",
     },
-    {
-        text: "Link-6",
-        link: "/",
-    },
-    {
-        text: "Link-7",
-        link: "/",
-    },
+   
 ];
 
 const Header: React.FC = () => {

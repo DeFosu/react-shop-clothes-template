@@ -10,7 +10,7 @@ interface NavigationMenuProps {
 }
 
 const NavigationMenu: React.FC<NavigationMenuProps> = ({ links }) => (
-    <ul className="flex gap-5 text-sm font-semibold">
+    <ul className="flex gap-5 text-xs font-light tracking-widest">
         {links.map((link, index) => (
             <li key={index} className={`py-2 ${link.color || ""}`}>
                 <a href="">{link.text}</a>
