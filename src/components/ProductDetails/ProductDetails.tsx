@@ -62,18 +62,18 @@ import { FaHeart, FaRegHeart } from 'react-icons/fa';
                 </div>
                 <div className="mb-8">    <SizesPrompt /></div>
                 <div className="pb-12">         
-                <DetailsButton variant="contained" className="bg-green-800 text-slate-200 mr-8">
+                <DetailsButton style="contained" size="small" className="bg-green-800 text-slate-200 mr-8">
                     ADD TO BASKET
                 </DetailsButton>
-                <DetailsButton variant="contained" className="bg-gray-300">
+                <DetailsButton style="contained"size="small" className="bg-gray-300">
                     BUY IN ONE CLICK
                 </DetailsButton>
                 </div>
                 <div>
-                <>⬜</><DetailsButton variant="outlined">
+                <>⬜</><DetailsButton style="outlined" size="normal">
                  Delivery,  payment, return
                 </DetailsButton>
-                <>⬜</><DetailsButton variant="outlined">
+                <>⬜</><DetailsButton style="outlined" size="normal">
                  Availability in stores
                 </DetailsButton>
                </div>

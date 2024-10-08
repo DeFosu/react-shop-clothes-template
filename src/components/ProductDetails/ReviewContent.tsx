@@ -27,7 +27,7 @@ const ReviewContent = () => {
           <FaComment />
           <span>2</span>
         </div>
-        <div><DetailsButton variant="outlined">
+        <div><DetailsButton style="outlined" size='normal'>
                  Answer
                 </DetailsButton></div>
       </div>

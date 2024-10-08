@@ -10,7 +10,7 @@ const SizesPrompt = () => {
   return (
     <>
       <button onClick={openModal} className="">
-      <>⬜</><DetailsButton variant="outlined">
+      <>⬜</><DetailsButton style="outlined" size="normal">
                  Sizes
                 </DetailsButton>
       </button>

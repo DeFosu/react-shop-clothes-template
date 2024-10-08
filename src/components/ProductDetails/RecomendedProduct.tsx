@@ -5,8 +5,8 @@ import Pcard from '../../pages/Pcard';
 const RecomendedProduct = () => {
   return (
     <div className="">
-                <DetailsButton variant="bigoutlined">
-                 SIMILAR PRODUCTS
+                <DetailsButton style="bigOutlined" size="big">
+                 WATCHED PRODUCTS
                 </DetailsButton>
                 <Pcard />   
       <div >
