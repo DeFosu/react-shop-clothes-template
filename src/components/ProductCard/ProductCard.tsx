@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import type { TProductData } from "./ProductCard.props";
+import { FaHeart, FaRegHeart } from "react-icons/fa";
 
 const ProductCard: React.FC<TProductData> = (product) => {
-    const [value, setValue] = useState('❤');
+    const [isFavorite, setIsFavorite] = useState(false);
 
     const handleClick = () => {
-        setValue((prevValue) => (prevValue === '❤' ? '🖤' : '❤'));
+      setIsFavorite((prevValue) => !prevValue);
     };
 
     // проверка
@@ -31,12 +32,12 @@ const ProductCard: React.FC<TProductData> = (product) => {
                         -{discountPercentage}%
                     </span>
                 )}
-                <button
-                    className="absolute flex items-center justify-center w-8 h-8 bg-white rounded-full shadow-md top-2 right-2"
-                    onClick={handleClick}
-                >
-                    {value}
-                </button>
+    <button
+      className="absolute flex items-center justify-center w-8 h-8 bg-white rounded-full shadow-md top-2 right-2 text-red-400 hover:text-red-600"
+      onClick={handleClick}
+    >
+      {isFavorite ? <FaHeart className="w-6 h-6" /> : <FaRegHeart className="w-6 h-6" />}
+    </button>
             </div>
             <div className="pt-2">
                 <div className="mb-1 text-base font-semibold">

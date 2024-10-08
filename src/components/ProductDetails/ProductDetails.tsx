@@ -2,16 +2,17 @@ import React, { useState } from "react";
 import DetailsButton from "./DetailsButton";
 import Sizes from "./Sizes";
 import SizesPrompt from "./SizesPrompt";
+import { FaHeart, FaRegHeart } from 'react-icons/fa';
 
 
 
-const ProductDetails = () => {
-    const hasDiscount = true;
-    const [value, setValue] = useState("❤");
+    const ProductDetails = () => {
+        const hasDiscount = true;
+        const [isFavorite, setIsFavorite] = useState(false);
 
-    const handleClick = () => {
-        setValue((prevValue) => (prevValue === "❤" ? "🖤" : "❤"));
-    };
+        const handleClick = () => {
+          setIsFavorite((prevValue) => !prevValue);
+        };
 
     // Функция для расчета бонуса
     // const calculateBonus = (price) => {
@@ -30,11 +31,11 @@ const ProductDetails = () => {
             <div className="text-3xl mb-6">
                 Кросівки Staff white & brown
                 <button
-                    className="pl-14 text-red-400"
-                    onClick={handleClick}
-                >
-                    {value}
-                </button>
+      className="pl-14 text-red-400 hover:text-red-600 transition duration-300"
+      onClick={handleClick}
+    >
+      {isFavorite ? <FaHeart className="w-6 h-6" /> : <FaRegHeart className="w-6 h-6" />}
+    </button>
             </div>
 
             <span className="text-lg tracking-widest">
