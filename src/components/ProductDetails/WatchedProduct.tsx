@@ -5,7 +5,7 @@ import Pcard from '../../pages/Pcard';
 const WatchedProduct = () => {
   return (
     <div className="">
-                <DetailsButton style="bigOutlined" size="big">
+                <DetailsButton style="boldOutlined" size="big" outline='bold'>
                  WATCHED PRODUCTS
                 </DetailsButton>
                 <Pcard />   

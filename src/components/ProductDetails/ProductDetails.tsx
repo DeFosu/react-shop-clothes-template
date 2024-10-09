@@ -70,10 +70,10 @@ import { FaHeart, FaRegHeart } from 'react-icons/fa';
                 </DetailsButton>
                 </div>
                 <div>
-                <>⬜</><DetailsButton style="outlined" size="normal">
+                <>⬜</><DetailsButton style="outlined" size="normal" outline="medium">
                  Delivery,  payment, return
                 </DetailsButton>
-                <>⬜</><DetailsButton style="outlined" size="normal">
+                <>⬜</><DetailsButton style="outlined" size="normal" outline="medium">
                  Availability in stores
                 </DetailsButton>
                </div>

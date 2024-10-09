@@ -47,10 +47,10 @@ const ProductDescription = () => {
   </div>
       </div>
       <div className="flex justify-center space-x-6 pb-2 mb-7">
-        <DetailsButton style="bigOutlined" size='big'>
+        <DetailsButton style="boldOutlined" size="big" outline='bold'>
                  REVIEWS 11
                 </DetailsButton>
-                <DetailsButton style="bigOutlined" size='big'>
+                <DetailsButton style="boldOutlined" size='big' outline="bold">
                  QUESTIONS 222
                 </DetailsButton>
                 </div>
